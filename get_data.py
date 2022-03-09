@@ -40,7 +40,7 @@ for product in products:
 
     for file_to_download in selected_product:
         print(f"Downloading '{file_to_download}'")
-        with product.open(entry=file_to_download) as source, open(f"./Data/{source.name}", mode="wb") as destination:
+        with product.open(entry=file_to_download) as source, open(f"./data/{source.name}", mode="wb") as destination:
             shutil.copyfileobj(source, destination)
             print("Download complete")
 
