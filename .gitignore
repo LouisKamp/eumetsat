@@ -1,0 +1,5 @@
+*.nat
+*.mp4
+.env
+notes.md
+.DS_Store
