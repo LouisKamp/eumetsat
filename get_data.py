@@ -43,5 +43,3 @@ for product in products:
         with product.open(entry=file_to_download) as source, open(f"./data/{source.name}", mode="wb") as destination:
             shutil.copyfileobj(source, destination)
             print("Download complete")
-
-    # %%
